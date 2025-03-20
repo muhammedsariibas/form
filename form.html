@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title  >ÜNAL KABLO BAŞVURU FORMU</title>
+    <title>ÜNAL KABLO BAŞVURU FORMU</title>
     <style>
-        label{
-            color:bisque;
-            margin: 52px;
+        .label {
+            width: 150px;
+            color: bisque;
+            margin: 10px 10px 10px 10px;
+        }
 
+        input {
+            margin: 12px;
+            float: middle;
         }
-        input{
-            margin:12px;
-            float:middle;
+
+        .parentDiv {
+            /* flex sıralı olmasını sağlar. Justify content satur bazında , align center sutün bazında  */
+            display: flex;
+            justify-content: start;
+            align-items: center;
         }
+
+        
     </style>
 </head>
-<body bgcolor="black" >
-<img>
-    <h1 style ="color:white;text-align: center" >Ünal Kablo Başvuru Formu</h1>
+
+<body bgcolor="black">
+    <img>
+    <h1 style="color:white;text-align: center">Ünal Kablo Başvuru Formu</h1>
+
+
+    <form>
+
+
+        <span class="parentDiv">
+            <div class="label">
+                <label style="text-align: center">AD:</label>
+            </div>
+            <div> <input type="text" name="ad" style="float:top"></div>
+        </span>
+
+        <div class="parentDiv">
+            <div class="label">
+                <label style="text-align: center">Soyad:</label>
+            </div>
+            <div> <input type="text" name="ad" style="float:top"></div>
+        </div>
+        <div class="parentDiv">
+            <div class="label">
+                <label style="text-align: center">AD:</label>
+            </div>
+            <div> <input type="text" name="ad" style="float:top"></div>
+        </div>
+
+        <div class="parentDiv">
+            <div class="label">
+                <label style="text-align: center">Soyad:</label>
+            </div>
+            <div> <input type="text" name="ad" style="float:top"></div>
+        </div>
+        <div class="parentDiv">
+            <div class="label">
+                <label style="text-align: center">YAŞ:</label>
+            </div>
+            <div> <input type="text" name="ad" style="float:top"></div>
+        </div>
+
+        <div class="parentDiv">
+            <div class="label">
+                <label style="text-align: center">ÇOCUK DURUMU:</label>
+            </div>
+            <div> <input type="text" name="ad" style="float:top"></div>
+        </div>
+
+        <div class="parentDiv">
+            <div class="label">
+                <label style="text-align: center">TELEFON NUMARASI:</label>
+            </div>
+            <div> <input type="text" name="ad" style="float:top"></div>
+        </div>
+
+        <input type="submit" value="kaydet">
+    </form>
 
     
-    <form>
-        <label  style ="text-align: center">AD:</label>
-        <input type="text"name="ad"style="float:top" >
-        <br></br>
-        <label style ="text-align: center">SOYAD:</label>
-        <input type="text"name="soyad;"style="float:middle">
-        <br></br>
-        <label style ="text-align: center">YAŞ:</label>
-        <input type="date"name="yaş">
-        <br></br>
-        <label style="">ÇOCUK DURUMU:</label>
-        <label style ="">VAR</label>
-        <input type="radio"name="çocuk">
-        <label style ="">YOK</label>
-        <input type="radio"name="çocuk">
-        <br></br>
-        <label style ="text-align: center">TELEFON NUMARASI:</label>
-        <input type="number"name="telno">
-        <br></br>
-        <label style ="text-align: center"value="...@gmail;">EMAİL:</label>
-        <input type="email"name="mail">
-        <br></br>
-        <label style ="text-align: center">TECRÜBE:</label>
-        <input type="text"name="tecrübe">
-        <br></br>
-        <label style ="text-align: center">MAAŞ BEKLENTİSİ:</label>
-        <input type="number"name="maaş">
-        <br></br>
-        <input type="submit"value="kaydet">
 </body>
+
 </html>
